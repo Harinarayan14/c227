@@ -22,7 +22,7 @@ def encryption():
         temp= (ord(msg[i])+key)
         if temp>126:
             temp=temp-127+32
-            encrypted_text+=chr(temp)
+        encrypted_text+=chr(temp)
     print(encrypted_text)
 
 def decryption():
@@ -35,7 +35,7 @@ def decryption():
         temp= (ord(msg[i])-key)
         if temp<32:
             temp=temp+127-32
-            decrypted_text+=chr(temp)
+        decrypted_text+=chr(temp)
     print(decrypted_text)
 
 if __name__ == "__main__":
